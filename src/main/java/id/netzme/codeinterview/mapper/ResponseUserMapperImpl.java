@@ -6,10 +6,10 @@ import id.netzme.codeinterview.dto.response.ResponseUserRetrofit;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ResponseUserMapperImpl implements ResponseUserMapper{
+public class ResponseUserMapperImpl implements ResponseUserMapper {
     @Override
     public ResponseUser toResponseUser(ResponseUserRetrofit responseUserRetrofit) {
-        if (responseUserRetrofit == null){
+        if (responseUserRetrofit == null) {
             return null;
         }
         Result result = responseUserRetrofit.getResults().get(0);

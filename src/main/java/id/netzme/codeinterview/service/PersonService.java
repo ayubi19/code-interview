@@ -1,10 +1,10 @@
 package id.netzme.codeinterview.service;
 
-import id.netzme.codeinterview.dto.response.ResponseUser;
+import id.netzme.codeinterview.dto.response.ResponseUserRetrofit;
 
 import java.io.IOException;
 
 public interface PersonService {
 
-    ResponseUser getPerson() throws IOException;
+    ResponseUserRetrofit getPerson() throws IOException;
 }
